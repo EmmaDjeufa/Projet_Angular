@@ -1,0 +1,29 @@
+.centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh; /* Pour centrer verticalement sur toute la hauteur de la vue */
+    width: 170vh;
+
+
+    
+}
+  
+  img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+    max-height: 100%; /* Assurez-vous que l'image ne dépasse pas la hauteur de son conteneur */
+
+  }
+  h3{
+    color: rgb(19, 17, 16);
+    font-style: italic;
+  }
+
+  h1 {
+    font-size: 5em; /* Vous pouvez ajuster la taille selon vos préférences */
+  }
+  
+  h2 {
+    font-size: 3em; /* Vous pouvez ajuster la taille selon vos préférences */
+  }
+  

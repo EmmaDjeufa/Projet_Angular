@@ -1,0 +1,29 @@
+
+
+ul li {
+   
+    border-radius: 25px;
+    margin: 5px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px 5px rgba(64, 64, 128, 0.5);
+    
+
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    display: flex;
+    margin-top: 10px;
+    
+    
+    
+}
+ul{
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+}
+  

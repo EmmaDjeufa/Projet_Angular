@@ -1,0 +1,31 @@
+<section>
+    <h1>LES UTILISATEURS INSCRITS :</h1>
+    <h3>N'hésitez pas à les rejoindre !</h3>
+    <fieldset class="rond">
+        <input
+          name="filtre"
+          [(ngModel)]="filtre"
+          placeholder="Filtrer les événéments"
+        />
+     </fieldset>  
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="filter"  *ngFor="let u of filtrerUtilisateurs(); let i=index">
+                <td>{{ u.nom }}</td>
+                <td>{{ u.prenom }}</td>
+                <td>{{ u.email }}</td>
+                <td><span *ngIf="u.statut">{{ u.statut }}</span></td>
+                <!--== 'user'-->
+            </tr>
+        </tbody>
+    </table>
+</section>
+

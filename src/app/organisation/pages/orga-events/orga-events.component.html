@@ -1,0 +1,30 @@
+<section>
+    <header>
+        
+        <form (submit)="orga.ajouterEvenement(form)">
+            <h3>Pour ajouter un événement, veuillez remplir le formulaire ci-dessous :</h3>
+            <fieldset>
+                <label>Titre</label>
+                <input name="titre" placeholder="Entrez le titre de l'événement">
+            </fieldset>
+            <fieldset>
+                <label>Nombre de places</label>
+                <input name="places" placeholder="Entrez le nombre de places disponibles">
+            </fieldset>
+            <fieldset>
+                <label>Dates</label>
+                <input name="date" placeholder="jj/m/aaaa ">
+            </fieldset>
+            <fieldset>
+                <label>Début</label>
+                <input name="debut" placeholder="Entrez la période de début de l'événement">
+            </fieldset>
+            <fieldset>
+                <label>Fin</label>
+                <input name="fin" placeholder="Entrez la période de fin de l'événement">
+            </fieldset>
+            <button>Ajouter</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </header>
+</section>

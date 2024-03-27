@@ -1,0 +1,43 @@
+.image-arrondie {
+    border-radius: 50%; /* Vous pouvez ajuster le pourcentage selon vos préférences */
+}
+.centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77vh; /* Pour centrer verticalement sur toute la hauteur de la vue */
+    width: 160vh;
+}
+  
+  img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+    max-height: 100%; /* Assurez-vous que l'image ne dépasse pas la hauteur de son conteneur */
+
+  }
+  h1{
+    font-size: 2em; 
+  }
+  ul li {
+   
+    border-radius: 10px;
+    margin: 5px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px 5px rgba(54, 54, 194, 0.5);
+    position: fixed;
+    right: 0;
+    background-color: #240b94;
+    width: 150px; 
+    height: 40px; 
+}
+ul{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    list-style-type: none;
+}
+li {
+  display: inline-block; 
+  margin-right: 10px; 
+  font-size: 16px; 
+}

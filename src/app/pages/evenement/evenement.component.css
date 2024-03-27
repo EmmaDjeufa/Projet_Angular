@@ -1,0 +1,18 @@
+.image-arrondie {
+    border-radius: 50%; /* Vous pouvez ajuster le pourcentage selon vos préférences */
+}
+
+  
+  img {
+    width: 400px; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+    max-height: 400px; /* Assurez-vous que l'image ne dépasse pas la hauteur de son conteneur */
+
+  }
+  h1 {
+    font-size: 5em; 
+    
+  }
+  p{
+    font-size: 2em; 
+    
+  }

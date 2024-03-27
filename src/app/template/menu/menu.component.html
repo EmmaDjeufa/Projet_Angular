@@ -1,0 +1,12 @@
+<nav class="menu-bar">
+    <ul>
+        <li routerLink="/">Accueil</li>
+        <li routerLink="/evenements">Evénements</li>
+        <li routerLink="/inscription">M'inscrire</li>
+        <li *ngIf="!authService.isLoggedIn" routerLink="/connexion">Mon profil</li>
+        <li *ngIf="authService.isLoggedIn" routerLink="/profil">Mon profil</li>
+        <li routerLink="/utilisateurs">Ils sont déjà inscrits (et il n'y a pas Mark Zuckerberg)</li>
+        <li routerLink="/connexion" *ngIf="!auth.isLoggedIn">Se connecter</li>
+        <li routerLink="/" (click)="auth.isLoggedIn = false" *ngIf="auth.isLoggedIn">Se déconnecter</li>
+    </ul>
+</nav>

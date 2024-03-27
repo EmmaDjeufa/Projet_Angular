@@ -1,0 +1,20 @@
+<section >
+  
+    <div class="container" *ngIf="evenement">
+        <h1>{{ evenement.titre }}</h1>
+        <p>Date: {{ evenement.date | date }}</p>
+        <p>Places: {{ evenement.places }}</p>
+        <p>Horaires: {{ evenement.horaires.debut }} - {{ evenement.horaires.fin }}</p>
+        <p class="centrer"><img src="{{evenement.image}}" alt="image inexistante" width="800" height="600" class="image-arrondie"></p>
+      </div>
+</section>
+<section *ngIf="selectedEvenement">
+  <div class="container">
+      <h2>{{ selectedEvenement.titre }}</h2>
+      <p>Date: {{ selectedEvenement.date | date }}</p>
+      <p>Places: {{ selectedEvenement.places }}</p>
+      <p>Horaires: {{ selectedEvenement.horaires.debut }} - {{ selectedEvenement.horaires.fin }}</p>
+      <p class="centrer"><img src="{{selectedEvenement.image}}" alt="image inexistante" width="800" height="600" class="image-arrondie"></p>
+      <p><button (click)="this.fermer()"> fermer</button></p>
+    </div>
+</section>

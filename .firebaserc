@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "cy2023-feast-b5034"
+  },
+  "targets": {
+    "cy2023-feast-b5034": {
+      "hosting": {
+        "CY2023-feast": [
+          "cy2023-feast-b5034"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

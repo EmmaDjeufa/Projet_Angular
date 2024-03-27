@@ -1,0 +1,32 @@
+
+footer {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* 100% de la hauteur de la vue */
+}
+
+ul {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    margin-top: 20px;
+}
+
+ul li {
+    border-radius: 25px;
+    align-items: center;
+    margin: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    box-shadow: 0 0 10px 5px rgba(20, 20, 61, 0.5);
+}
+/*background-color: aqua;*/
+
+.menu-bar {
+    
+    /*background-color: rgb(92, 85, 66); */
+    height: 100px;
+    
+}

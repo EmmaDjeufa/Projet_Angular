@@ -1,0 +1,21 @@
+<p>...</p>
+<p>...</p >
+<p>...</p>
+
+<h1>Vous vous connectez à CY2023-feast ...</h1>
+<section class="center-container">
+<form (submit)="auth.fireAuth()">
+    <fieldset>
+        <label>Votre identifiant</label>
+        <input name="id" placeholder="Saisissez votre identifiant" [(ngModel)]="auth.authID.id" required>
+    </fieldset>
+    <fieldset>
+        <label>Votre mot de passe</label>
+        <input name="mdp" type="password" placeholder="Saisissez votre mot de passe" [(ngModel)]="auth.authID.mdp" required>
+    </fieldset>
+    <button>Envoyer</button>
+    <button type="reset">Annuler</button>
+    <p>Première visite ?  Cliquez sur *M'inscrire* pour créer votre compte.</p>
+
+</form>
+</section>

@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 17.5px;
+    
+}
+
+th, td {
+    border: 2px solid #ececf0;
+    padding: 3px;
+    text-align: left;
+}
+
+/* Effet de lueur au survol du tableau */
+table:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 252, 55, 0.479); /* Couleur et intensité de la lueur */
+    transition: box-shadow 0.3s ease-in-out; /* Durée et fonction de transition */
+}
+.filter{
+    box-shadow: 0 0 10px 5px rgba(78, 78, 85, 0.5); 
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+app-evenement{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left:0 ;
+    top: 0;
+
+    
+
+}
+
+td{
+    color: rgb(15, 1, 12);
+    font-weight: bold;
+}
+
+input{
+    color: rgb(82, 4, 65);
+    font-weight: bold;
+}
+h1 {
+    font-size: 6em; 
+ 
+}

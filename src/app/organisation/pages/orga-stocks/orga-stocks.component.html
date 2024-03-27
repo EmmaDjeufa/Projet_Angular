@@ -1,0 +1,25 @@
+<section>
+    <h1>LES stocks</h1> 
+    <table>
+        <thead>
+            <tr>
+                <th>Evenement N°</th>
+                <th>Boissons</th>
+                <th>Entrées</th>
+                <th>Nombre de plat de résistance</th>
+                <th>Desserts</th>
+                <th>Fruits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="filter" *ngFor="let u of stocks.listeLesStocks  let i=index">
+                <td>{{i}}</td>
+                <td>{{ u.boisson }}</td>
+                <td>{{ u.entree }}</td>
+                <td>{{ u.platResistance }}</td>
+                <td>{{ u.dessert }}</td>
+                <td>{{ u.fruit }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

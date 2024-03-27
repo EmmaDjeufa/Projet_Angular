@@ -1,0 +1,61 @@
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 150px;
+  padding: 20px;
+  border: 1px solid rgb(110, 136, 191);
+  border-radius: 8px;
+  background-color: rgba(83, 85, 85, 0.082);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.509);
+  margin-left: 13cm;
+}
+
+h3 {
+  text-align: center;
+  color: #030303;
+  font-size: 3.5em;
+  margin-top: 20px;
+
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #272121;
+}
+
+input {
+  width: calc(100% - 12px);
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #150f0f;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0f2033;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* Optional: Add hover effect to buttons */
+button:hover,
+button[type="reset"]:hover {
+  background-color: #0056b3;
+}

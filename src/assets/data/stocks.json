@@ -1,0 +1,72 @@
+[
+    {
+        "boisson": "Coca-cola (50)",
+        "entree": "Escargots de Bourgogne",
+        "platResistance": 1,
+        "dessert":"Le baba au rhum",
+        "fruit": "Banane"
+      },
+    {
+        "boisson": "Cristaline (60)",
+        "entree": "Quiche Lorraine",
+        "platResistance": 3,
+        "dessert":"Macaron",
+        "fruit": "Orange"
+      },
+    {
+        "boisson": "Lipton (80)",
+        "entree": "Pâté lorrain",
+        "platResistance": 2,
+        "dessert":"Le mille-feuille",
+        "fruit": "papaye"
+      },
+    {
+        "boisson": "Tropicana (70)",
+        "entree": "Salade niçoise",
+        "platResistance": 1,
+        "dessert":"Le fondant au chocolat",
+        "fruit": "Clémentines"
+      },
+    {
+      "boisson": "Volvic (40)",
+      "entree": "Flamiche aux poireaux",
+      "platResistance": 2,
+      "dessert":"La crème brûlée",
+      "fruit": "papaye"
+    },
+    {
+        "boisson": "Scheweppes (90)",
+        "entree": "Beignets de fleurs de courgette",
+        "platResistance": 6,
+        "dessert":"Tarte au citron",
+        "fruit": "papaye"
+      },
+      {
+        "boisson": "Perrier (60)",
+        "entree": "Papeton d'aubergine",
+        "platResistance": 4,
+        "dessert":"Tarte Tatin",
+        "fruit": "Banane"
+      },
+      {
+        "boisson": "Oasis (50)",
+        "entree": "Anchoïade",
+        "platResistance": 3,
+        "dessert":"La mousse au chocolat",
+        "fruit": "papaye"
+      },
+      {
+        "boisson": "Hepar (60)",
+        "entree": "Salade de chèvre chaud",
+        "platResistance": 2,
+        "dessert":"Riz au lait vanillé",
+        "fruit": "Mangue"
+      },
+      {
+        "boisson": "Teissiere (70)",
+        "entree": "Brochettes de melon au jambon cru",
+        "platResistance": 2,
+        "dessert":"Tarte au citron",
+        "fruit": "Mangue"
+      }
+    ]

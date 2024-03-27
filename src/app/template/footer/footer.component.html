@@ -1,0 +1,22 @@
+<!--<nav class="menu-bar">
+    <ul>
+        <li routerLink="/legals">Mentions légales</li>
+        <li routerLink="/rgpd">RGPD</li>
+        <li routerLink="/contact">Contact</li>
+        <li routerLink="/organisation">Accès privé (organisation)</li>
+        <li routerLink="/admin">Admin</li>
+    </ul>
+    
+</nav>-->
+
+<nav class="menu-bar">
+    <ul>
+        <li routerLink="/legals">Mentions légales</li>
+        <li routerLink="/rgpd">RGPD</li>
+        <li routerLink="/contact">Contact</li>
+        <li *ngIf="!authService.isLoggedIn" routerLink="/connexion">Accès privé (organisation)</li>
+        <li *ngIf="authService.isLoggedIn" routerLink="/organisation">Accès privé (organisation)</li>
+        <li *ngIf="authService.isLoggedIn" routerLink="/admin">Admin</li>
+        <li *ngIf="!authService.isLoggedIn" routerLink="/connexion">Admin</li>
+    </ul>
+</nav>

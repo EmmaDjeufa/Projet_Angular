@@ -1,0 +1,54 @@
+<section>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <form (submit)="auth.fireInscription()" *ngIf="!auth.isLoggedIn">
+        <h1>Vous êtes prêt à nous rejoindre? Ne tardez plus !</h1>
+        <h2>Veuillez remplir le formulaire ci-dessous :</h2>
+        <fieldset>
+            <label>Email</label>
+            <input name="email" [(ngModel)]="auth.authID.id">
+        </fieldset>
+        <fieldset>
+            <label>Créer votre mot de passe</label>
+            <input name="password" [(ngModel)]="auth.authID.mdp">
+        </fieldset>
+        <button >M'inscrire</button>
+        <button type="reset">Annuler</button>
+    </form>
+    <!--<form (submit)="users.gereDoc(ctlf.value)"  *ngIf="auth.isLoggedIn" #ctlf="ngForm">-->
+    <form (submit)="users.gereDoc(ctlf)" *ngIf="auth.isLoggedIn" #ctlf="ngForm">
+        <h1>Etape 2 - Créez votre profil</h1>
+        <h1>Merci de renseigner les informations suivantes pour créer votre compte</h1>
+        <fieldset>
+            <label>Nom*</label>
+            <input name="nom" [(ngModel)]="users.inscription.nom" #ctlNom="ngModel" required minlength="8">
+            <!-- <span *ngIf="ctlNom.value.length < 8">Le champ doit avoir au moins 8 champs</span> -->
+        </fieldset>
+        <fieldset>
+            <label>Prénom*</label>
+            <input name="prenom" [(ngModel)]="users.inscription.prenom">
+        </fieldset>
+        <fieldset>
+            <label>Statut*</label>
+            <select name="statut" [(ngModel)]="users.inscription.statut">
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>Avatar</label>
+            <input type="file" (change)="onFileSelected($event)" accept="image/*">
+        </fieldset>
+        <button>M'inscrire</button>
+        <button type="reset">Annuler</button>
+        <div *ngIf="inscriptionSuccessMessage" class="success-message">
+            {{ inscriptionSuccessMessage }}
+          </div>
+          <div *ngIf="inscriptionErrorMessage" class="error-message">
+            {{ inscriptionErrorMessage }}
+          </div>
+    </form>
+</section>
+
+

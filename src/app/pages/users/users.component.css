@@ -1,0 +1,32 @@
+th, td {
+    border: 2px solid #dcdce2;
+    padding: 8px;
+    text-align: left;
+    box-shadow: 0 0 5px 5px rgba(184, 184, 216, 0.5); 
+}
+
+/* Effet de lueur au survol du tableau */
+table:hover {
+    box-shadow: 0 0 10px 5px rgb(255, 252, 55); /* Couleur et intensité de la lueur */
+    transition: box-shadow 0.3s ease-in-out; /* Durée et fonction de transition */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 25px;
+    
+}
+.filter{
+    box-shadow: 0 0 10px 5px rgba(78, 78, 85, 0.5); 
+}
+.rond{
+    border-radius: 25px;
+    width: 50vh;
+    box-shadow: 0 0 10px 5px rgba(52, 52, 75, 0.5); 
+}
+h1 {
+    font-size: 4em; 
+   
+}

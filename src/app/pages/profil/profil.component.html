@@ -1,0 +1,13 @@
+<section class="centrer">
+    <div class="container" *ngIf="profil">
+       <h1>Votre profil, {{ profil.nom }} {{ profil.prenom }}</h1>
+       <h2>Nom: {{ profil.nom }}</h2>
+        <h2>Prenom: {{ profil.prenom }}</h2>
+        <h2>email: {{ profil.email}} </h2>
+        <p><img [src]="profil.avatar" alt="L'image n'est pas disponible" class="image-arrondie"></p>
+      
+        <!--<p><img src="{{image}}" alt="image inexistante" width="1000" height="320"></p>-->
+      </div>
+</section>
+
+
