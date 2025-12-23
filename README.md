@@ -1,67 +1,116 @@
-<<<<<<< HEAD
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/LRm4bhIP)
-# CYTech 2023 Cloud Front feast - Gestionnaire d'événements
-https://fluffy-space-goggles-4vv74j7xx65fqjj4-4200.app.github.dev/
-## Consignes pour la création de l'application notée
+# Projet_Angular – Event Management Web App (Angular + Firebase)
 
-### Synthèse
+A web application built with **Angular** and **Firebase** for managing events, users, and related data. This project showcases a single‑page application (SPA) built with the Angular framework, including development, build, and test workflows.
 
-- date de rendu : 06 décembre 2023 à 23h59. Attention, après cette date, les accès au dépôt sera bloqué et la soumission de votre travail impossible !!!
-- format exclusif du rendu : **soumission sur Github dans le dépôt consacré sur Classroom**, celui qui contient ce README (aucune autre forme ne sera acceptée, merci par avance pour votre compréhension et le respect de cette demande si pénible lorsqu'elle n'est pas respectée (des points seront enlevés !!!!!!)) ;
-- **indiquez votre nom dans le readme** du projet que je sache que c'est vous qui l'avez soumis ;
-- **indiquez des paramètres de connexion fonctionnels me permettant de voir le fonctionnement des différents statuts**.
-- utilisez les pull requests sur vos dépôts pour poser des questions, je recevrai une notification par email. Discord marchera certainement aussi mais est moins sûr. Passez par des messages privés.
-Tous ces paramètres sont nécessaires. Leur non respect engendrera des problèmes dommageables (retard, perte de points).
+---
 
-## Attendus
+## Project Purpose
 
-Nous avons découvert les pricinpes de fonctionnement de Angular et Firebase en développant une application de gestion des événements. Vous aurez à finaliser le projet et à le soumettre sur le dépôt dédié en suivant les indications ci-dessous.
+This is an **Angular client‑side application** for managing events and associated user data. It was developed as part of a coursework assignment and demonstrates a working Angular frontend with routing, component interaction, and Firebase backend integration.
 
-### Interfaces et gestion des données
+---
 
-Finalisez les affichages des pages et formulaires de l'application avec des données dynamiques sur Firebase pour le profil utilisateur, les événements, les utilisateurs, les stocks. Essayez d'avoir quelque chose d'un minimum présentable et structuré graphiquement pour que nous comprenions l'expérience proposée.
+## Project Structure
 
-### Gestion des droits
+```
 
-Créez un système de droits permettant à une personne authentifiée de réaliser les tâches qui lui sont autorisées ou allouées et protégez les accès aux parties du logiciel avec ce système comme suit :
-- un utilisateur devra pouvoir s'identifier, indiquer qu'il souhaite participer à un événement et pouvoir mettre à jour et supprimer son profil ;
-- les organisateurs et les admins peuvent accéder à l'espace 'Organisation', gérer les stocks et les événements (créer, mettre à jour, suppression) ;
-- seuls les admins peuvent accéder à l'espace admin pour gérer les utilisateurs.
-A chaque fois, il faudra afficher les données et mettre les fonctions qui permettent à un utilisateur de modifier, supprimer ces données.
+Projet_Angular/
+├─ .github/                 # GitHub workflows
+├─ .vscode/                 # Editor configuration
+├─ src/                     # Angular application source
+├─ angular.json             # Angular CLI configuration
+├─ firebase.json            # Firebase hosting config
+├─ package.json             # Node & Angular dependencies
+├─ tsconfig.json            # TypeScript config
+├─ README.md
+└─ .gitignore
 
-### Options
+````
 
-Si vous voulez aller plus loin et améliorer votre évaluation, ajoutez un chat basé sur la base de données en temps réel de Firebase et les Observables.
+---
 
-## Critères d'évaluation
+## Prerequisites
 
-Le travail personnel est sollicité dans le graphisme/interaces, l'ajout de composants externes, les algorithmes, notamment pour la sécurité, etc. Il est important que les différentes parties du logiciel soient coordonnées et fonctionnelles. Le projet doit être pensé comme un livrable opérationnel. Par exemple un utilisateur peut se connecter, déconnecter. Ses droits lui permettent des accès à des parties protégées de l'application. Une erreur de réseau le déconnecte automatiquement.
-=======
-# CY2023Feast
+Before running the project, ensure you have:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+- **Node.js** (v14+)  
+- **npm** (or Yarn)  
+- **Angular CLI** installed globally:
+```bash
+npm install -g @angular/cli
+````
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Local Deployment
 
-## Code scaffolding
+### 1. Clone the Repository
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+git clone https://github.com/EmmaDjeufa/Projet_Angular.git
+cd Projet_Angular
+```
 
-## Build
+### 2. Install Dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install
+```
 
-## Running unit tests
+### 3. Serve the Application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run the Angular development server:
 
-## Running end-to-end tests
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Then open your browser and navigate to:
 
-## Further help
+```
+http://localhost:4200
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> dev
+### 4. Build for Production
+
+To compile the app for production:
+
+```bash
+ng build --prod
+```
+
+Built files will be output to the `dist/` folder.
+
+---
+
+## Features
+
+* **Angular SPA** with routing and component‑based architecture ([GitHub][1])
+* **Firebase integration** (hosting, authentication/data) ([GitHub][1])
+* **TypeScript + Angular CLI** development workflow ([GitHub][1])
+* **Development & production builds** managed via Angular CLI ([GitHub][1])
+
+---
+
+## Testing
+
+* **Unit tests:**
+
+```bash
+ng test
+```
+
+* **End‑to‑end tests (if configured):**
+
+```bash
+ng e2e
+```
+
+---
+
+## Feedback & Contributions
+
+* **Report issues:** Open a GitHub issue for bugs or suggestions
+* **Contribute:** Fork the repository and submit a pull request
+* **Contact:** Reach out via GitHub for questions or collaboration
+
